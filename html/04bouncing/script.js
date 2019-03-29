@@ -21,7 +21,7 @@ for (var i = 0; i < 5; i++) {
 }
 
 function animate() {
-  // ctx.clearRect(0, 0, canvas.width, canvas.height);
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
   requestAnimationFrame(animate);
   kineticObject.vel.add(kineticObject.acc);
   kineticObject.pos.add(kineticObject.vel);

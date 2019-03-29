@@ -1,9 +1,10 @@
-body {
-  background-color: aliceblue;
+body{
+  background-color: lemonchiffon;
   margin: 0;
-  cursor: crosshair;
+  overflow: hidden;
+  cursor: url(media/crosshair.png) 25 25,auto;
 }
 
-#canvas {
-  background-color: white;
+#canvas{
+  background-color: aliceblue;
 }

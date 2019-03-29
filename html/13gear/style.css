@@ -1,0 +1,18 @@
+
+body
+{
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+}
+
+#canvas
+{
+  background-color: white;
+}
+
+
+#canvas arrow1
+{
+  transform-origin: top left;
+}
