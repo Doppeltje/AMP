@@ -65,15 +65,14 @@ function animate()
     movingBalls[n].vel.draw(ctx, movingBalls[n].pos.dx, movingBalls[n].pos.dy, 15, "red");
   }
 
-  // Check other ball colliders.
-  for (n = 0; n < numOfBalls; n++){
-
-    for (o = 0; o < numOfBalls; o++){
-      if (o !== n){
+  // // Check other ball colliders.
+   for (n = 0; n < numOfBalls; n++){
+     for (o = 0; o < numOfBalls; o++){
+       if (o !== n){
         movingBalls[o].rad.differenceVector(movingBalls[o].pos, movingBalls[n].pos);
-        if (movingBalls[n].rad.r < movingBalls[n].point.r + movingBalls[o].point.r){
+         if (movingBalls[n].rad.r < movingBalls[n].point.r + movingBalls[o].point.r){
           console.log("test1");
-          SetNewVector(movingBalls[n], movingBalls[o]);
+          SetNewVector(movingBalls[o], movingBalls[n]);
         }
       }
     }
