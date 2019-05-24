@@ -10,13 +10,19 @@
 
 
     <div class="video-frame">
-      <div class="video-container" id="video-container">
-        <video class="video" id="video"></video>
-        <canvas class="canvas" id="canvas"></canvas>
+      <video class="video" id="video"></video>
+      <canvas class="canvas" id="canvas" width="1280"></canvas>
+      <div class="scoreboard" id="sb">
+        <!-- Scoreboard -->
+        <!-- <h1>SCORE: </h1>
+      </div>
+      <div id="score">
+        <h1>0</h1>
+      </div> -->
     </div>
 
     <!-- Minimal tracking code -->
-    <script src="../tracking.js-master/build/tracking-min.js" charset="utf-8"></script>
+    <script src="../tracking.js-master/build/tracking-minYellow.js" charset="utf-8"></script>
     <script src="../tracking.js-master/assets/dat.gui.min.js"></script>
     <script src="../tracking.js-master/assets/color_camera_gui.js"></script>
 
@@ -28,7 +34,9 @@
     <!-- My script -->
     <script src="EnableWebcam.js" charset="utf-8"></script>
     <script src="ColorTracker.js" charset="utf-8"></script>
-    <!-- <script src="SpawnBall.js" charset="utf-8"></script> -->
+
+    <!-- tracking.ColorTracker.registerColor("cyan") -->
+
 
 
   </body>

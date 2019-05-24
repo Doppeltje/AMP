@@ -1,4 +1,5 @@
-canvas.width = window.innerWidth;
+// Reduce canvas.width by video width;
+canvas.width = window.innerWidth-640;
 canvas.height = window.innerHeight;
 let midX = canvas.width/2;
 let midY = canvas.height/2;
